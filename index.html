@@ -9,31 +9,202 @@
         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="/css/wdc.css" type="text/css">
     </head>
-    <body>
+    <body class="wdc">
         <div class="navbar-wrapper">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <nav class="navbar navbar-static-top navbar-dark bg-inverse">
-                            <a class="navbar-brand" href="#">Project name</a>
-                            <ul class="nav navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                            </ul>
+                            <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#wdcmainnav">&#9776;</button>
+                            <a class="navbar-brand" href="/"><img src="/images/logo.svg" alt="WDC Logo"></a>
+                            <div id="wdcmainnav"  class="collapse navbar-toggleable-xs pull-md-right">
+                                <ul class="nav navbar-nav pull-md-right">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/schedule">Schedule</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/speakers">Speakers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/workshops">Workshops</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/partners">Partners</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/venue">Venue</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://getinvited.to/bluefly/wdc2016">Tickets</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="home-intro">
+                            <h1>WDC2016</h1>
+                            <h2>October 6-7 2016</h2>
+                            <a href="#" class="btn btn-wdc">Get tickets</a> - Powered by Get Invited
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="home-section-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Who?</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-block">
+                                <h4 class="card-title">Gavin Strange</h4>
+                                <h6 class="card-subtitle text-muted">JamFactory</h6>
+                            </div>
+                            <img class="card-img-top img-fluid" data-src="/images/waiting.png" src="/images/waiting.png" alt="Card image cap">
+                            <div class="card-block">
+                                <p class="card-text">We are waiting for a short bio from this speaker to fill this space, keep an eye out for updates.</p>
+                                <!--<a href="#" class="btn btn-wdc">Find out more</a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-block">
+                                <h4 class="card-title">Ruth John</h4>
+                                <h6 class="card-subtitle text-muted">Coding Artist | Google Developer Expert</h6>
+                            </div>
+                            <img class="card-img-top img-fluid" data-src="/images/waiting.png" src="/images/waiting.png" alt="Card image cap">
+                            <div class="card-block">
+                                <p class="card-text">We are waiting for a short bio from this speaker to fill this space, keep an eye out for updates.</p>
+                                <!--<a href="#" class="btn btn-wdc">Find out more</a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-block">
+                                <h4 class="card-title">Harry Roberts</h4>
+                                <h6 class="card-subtitle text-muted">Consultant Front-end Architect</h6>
+                            </div>
+                            <img class="card-img-top img-fluid" data-src="/images/harry.jpg" src="/images/harry.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <p class="card-text">Consultant Front-end Architect: <a href="https://twitter.com/google">@google</a>, <a href="https://twitter.com/UN">@UN</a>, <a href="https://twitter.com/Etsy">@Etsy</a>, <a href="https://twitter.com/kickstarter">@kickstarter</a>, <a href="https://twitter.com/BBC">@BBC</a>, <a href="https://twitter.com/Unilever">@Unilever</a>, <a href="https://twitter.com/Deloitte">@Deloitte</a>, and more&hellip;</p>
+                                <!--<a href="#" class="btn btn-wdc">Find out more</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12"><a href="/speakers">View our entire 2016 lineup &raquo;</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="home-section-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>When?</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-xs-center">
+                        <div class="home-section-block">
+                            <h3>Workshops</h3>
+                            <h4>Thursday 6th October, 12:00 - 17:00</h4>
+                            <a href="/workshops" class="btn btn-wdc">View our Workshops</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-xs-center">
+                        <div class="home-section-block">
+                            <h3>Conference</h3>
+                            <h4>Friday 7th October, 09:00 - 17:00</h4>
+                            <a href="/schedule" class="btn btn-wdc">View the schedule</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-section-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Where?</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>The Watershed</h3>
+                        <h4>1 Canon's Road, Harbourside, Bristol BS1 5TX</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="map">
+                            <div class="map__location" id="map"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-section-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Why?</h2>
+                        <p>WDC wouldn't be possible without support from great companies and organisations year after year.  <a href="/partners">Are you one of those?</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="partner-block bluefly">
+                            <div class="partner-block-image-wrapper">
+                                <a href="https://bluefly.digital"><img src="/images/bluefly_digital_white.svg" class="img-fluid" alt="Bluefly Digital Logo"></a>
+                            </div>
+                            <footer>
+                                <h4>Bluefly Digital</h4>
+                                <i></i> <a href="https://bluefly.digital">https://bluefly.digital</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h6>&copy; <a href="https://bluefly.digital">Bluefly Digital</a> 2016</h6>
+                    </div>
+                    <div class="col-md-4">
+                        
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script src="/node_modules/jquery/dist/jquery.min.js"></script>
         <script src="/node_modules/tether/dist/js/tether.min.js"></script>
         <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="//maps.googleapis.com/maps/api/js?key=&amp;sensor=false&amp;extension=.js"></script>
+        <script>
+            google.maps.event.addDomListener(window,'load',init);var map;function init(){var mapOptions={center:new google.maps.LatLng(51.451971,-2.598082),zoom:16,zoomControl:true,zoomControlOptions:{style:google.maps.ZoomControlStyle.DEFAULT,},disableDoubleClickZoom:true,mapTypeControl:false,mapTypeControlOptions:{style:google.maps.MapTypeControlStyle.DROPDOWN_MENU,},scaleControl:false,scrollwheel:false,panControl:false,streetViewControl:true,draggable:false,overviewMapControl:false,overviewMapControlOptions:{opened:false,},mapTypeId:google.maps.MapTypeId.ROADMAP,styles:[{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"hue":"#f49935"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"hue":"#fad959"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#a1cdfc"},{"saturation":30},{"lightness":49}]}],}
+            var mapElement=document.getElementById('map');var map=new google.maps.Map(mapElement,mapOptions);var locations=[['Dorothy House','undefined','undefined','undefined','undefined',51.451971,-2.598082,'https://mapbuildr.com/assets/img/markers/default.png']];for(i=0;i<locations.length;i++){if(locations[i][1]=='undefined'){description='';}else{description=locations[i][1];}if(locations[i][2]=='undefined'){telephone='';}else{telephone=locations[i][2];}if(locations[i][3]=='undefined'){email='';}else{email=locations[i][3];}if(locations[i][4]=='undefined'){web='';}else{web=locations[i][4];}if(locations[i][7]=='undefined'){markericon='';}else{markericon=locations[i][7];}marker=new google.maps.Marker({icon:markericon,position:new google.maps.LatLng(locations[i][5],locations[i][6]),map:map,title:locations[i][0],desc:description,tel:telephone,email:email,web:web});link='';}}
+        </script>
+        <script src="https://use.typekit.net/zpi8kdu.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
     </body>
 </html>
