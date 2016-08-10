@@ -24,6 +24,10 @@ html {
         color: #fff200; }
       .wdc .navbar a.btn-wdc {
         color: #222; }
+    .wdc .navbar .active a {
+      color: #fff200; }
+      .wdc .navbar .active a:hover, .wdc .navbar .active a:active, .wdc .navbar .active a:focus {
+        color: #fff; }
     .wdc .navbar .navbar-brand img {
       width: 50px;
       height: 50px; }
@@ -164,3 +168,10 @@ html {
     padding: 5px; }
     .partner-block footer a {
       color: #fff200; }
+
+.speaker-follow {
+  margin-top: 20px; }
+
+.speaker-links {
+  list-style: none;
+  padding: 0; }

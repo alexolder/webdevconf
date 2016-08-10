@@ -50,6 +50,17 @@ html{
             }
         }
         
+        .active{
+            a{
+                color: $wdc;
+                
+                &:hover, &:active, &:focus{
+                    color: $white;
+                }
+                
+            }
+        }
+        
         .navbar-brand{
             img{
                 width: 50px;
@@ -260,4 +271,13 @@ html{
             color: $wdc;
         }
     }
+}
+
+.speaker-follow{
+    margin-top: 20px;
+}
+
+.speaker-links{
+    list-style: none;
+    padding: 0;
 }
