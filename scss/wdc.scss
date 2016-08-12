@@ -15,8 +15,12 @@ $xl: 75em;
         font-family: "open-sans",sans-serif;
     }
     
-    h1, h2, h3, h4, h5, h6, .btn{
+    h1, h2, h3, h4, h5, h6{
         font-family: "brandon-grotesque", sans-serif;
+    }
+    
+    strong{
+        font-weight: 700;
     }
 }
 
@@ -27,202 +31,253 @@ html{
 
 .wdc{
     min-height: 100%;
-    padding-bottom: 86px;
+    padding-bottom: 236px;
     position: relative;
     color: $black;
     
-    h2{
-        margin-bottom: 20px;
-    }
-    
-    .navbar-wrapper{
-        padding-top: 15px;
-        background: url('../images/wdcbg.jpg') no-repeat center center;
-        background-size: cover;
+    .navbar{
+        background-color: transparent;
         
-        @media screen and (min-width: 1024px){
-            min-height: 400px;
+        a{
+            color: $white;
+            
+            &:hover, &:active, &:focus{
+                color: $wdc;
+            }
+            
+            &.btn-wdc{
+                color: $black;
+            }
         }
         
-        .navbar{
-            border-radius: 0;
-            padding: 0.5rem 1rem 0.5rem 0.5rem;
+        .active{
+            a{
+                color: $wdc;
+                
+                &:hover, &:active, &:focus{
+                    color: $white;
+                }
+                
+            }
         }
         
         .navbar-brand{
-            height: 50px;
-            width: 50px;
-            padding: 0;
-        }
-        
-        #wdcmainnav{
-            clear: both;
-            
-            @media screen and (min-width: $md){
-                clear: none;
-            }
-        }
-        
-        .nav-item{
-            float: none;
-            margin-left: 0;
-            
-            @media screen and (min-width: $md){
-                float: left;
-                margin-left: 15px;
-            }
-            
-            .nav-link{
-                padding: 0.5rem 0;
-                
-                @media screen and (min-width: $md){
-                    padding-top: 0.825rem;
-                    padding-bottom: 0.825rem;
-                }
-            }
-        }
-    }
-    
-    .home-intro{
-        background: rgba($white, 0.75);
-        text-align: center;
-        height: 225px;
-        margin: 20px 0;
-        box-sizing: border-box;
-        padding: 20px;
-        
-        @media screen and (min-width: $lg){
-            height: 300px;
-        }
-        
-        h1{
-            font-size: 3.6rem;
-            
-            @media screen and (min-width: $lg){
-                font-size: 7rem;
-            }
-        }
-        
-        h2{
-            font-size: 2.125rem;
-            
-            @media screen and (min-width: $lg){
-                font-size: 4.2rem;
-            }
-        }
-    }
-    
-    .home-section-wrapper{
-        padding: 20px 0;
-    }
-    
-    .home-section-block{
-        box-sizing: border-box;
-        padding: 10px;
-        background-color: $black;
-        color: $white;
-        
-        h3{
-            text-transform: uppercase;
-        }
-    }
-    
-    .map{
-        margin: 20px 0;
-        
-        &__location{
-            height: 500px;
-        }
-    }
-    
-    .partner-block{
-        margin-bottom: 20px;
-        
-        .partner-block-image-wrapper{
-            box-sizing: border-box;
-            border: 5px solid $black;
-            padding: 10px;
-            height: 255px;
-            display: flex;
-            align-items: center;
-            
-            a{
-                display: block;
-                width: 100%;
-            }
-            
             img{
-                display: block;
+                width: 50px;
+                height: 50px;
             }
         }
         
-        &.bluefly{
-            .partner-block-image-wrapper{
-                background-color: #426eb6;
-            }
-        }
-        
-        
-        footer{
-            background-color: $black;
-            color: $white;
-            box-sizing: border-box;
-            padding: 5px;
-            
-            a{
-                color: $wdc;
-            }
+        &-nav{
+            margin-top: 10px;
         }
     }
+}
+
+.front-page-header{
+    background: $black url('../images/wdcbg.jpg') no-repeat center center;
+    background-size: cover;
+    border-bottom: 10px solid $black;
+    position: relative;
     
-    .site-footer{
-        border-top: 1px solid $grey;
-        padding: 20px 0;
+    &:before{
+        content: '';
+        display: block;
         position: absolute;
-        bottom: 0;
-        left: 0;
+        top: 0;
         width: 100%;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        background-color: rgba($black, 0.5);
+    }
+}
+
+.site-footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: $black;
+    color: $grey;
+    padding: 20px 0 10px;
+    
+    a{
+        color: $wdc;
+        font-weight: 700;
+        
     }
     
-    .btn{
-        text-transform: uppercase;
-        border-radius: 0;
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+}
+
+.intro-block{
+    background-color: rgba($black, 0.75);
+    margin: 30px 0;
+    color: $white;
+    padding: 20px;
+    
+    h1{
+        font-size: 3.6rem;
         
-        &-wdc{
-            background-color: $wdc;
+        @media screen and (min-width: $lg) {
+          font-size: 5.5rem;
+        }
+        
+        @media screen and (min-width: $xl){
+            font-size: 7rem;
+        }
+    }
+    
+    h2{
+        font-size: 2.125rem;
+        
+        @media screen and (min-width: $lg) {
+            font-size: 3.35rem;
+        }
+        
+        @media screen and (min-width: $xl){
+            font-size: 4.2rem
+        }
+    }
+    
+    .btn-wdc{
+        display: inline-block;
+        margin-right: 5px;
+    }
+    
+    a[href="http://getinvited.to"]{
+        display: inline-block;
+        margin-left: 5px;
+        
+        img{
+            width: auto;
+            height: 40px;
+            display: inline-block;
+        }
+    }
+}
+
+.btn{
+    
+    &-wdc{
+        background: $wdc;
+        color: $black;
+        transition: all 0.5s ease-in-out;
+        font-weight: bold;
+        
+        &:hover, &:active, &:focus{
+            background: darken($wdc, 5%);
             color: $black;
         }
     }
     
-    &.page{
-        h1{
-            margin-bottom: 30px;
-        }
+    &-wdc-alt{
+        background: $black;
+        color: $white;
+        font-weight: bold;
+        transition: all 0.5s ease-in-out;
         
-        h2{
-            margin: 20px 0;
+        &:hover, &:active, &:focus{
+            color: $wdc;
         }
+    }
+}
+
+.alert{
+    &-wdc{
+        background-color: $wdc;
+        color: $black;
+        margin-bottom: 0;
+    }
+    
+    p{
+        margin-bottom: 0;
+        padding-top: 8px;
+    }
+}
+
+.home-page-blocks{
+    
+    .block{
+        padding: 10px 0;
         
-        .schedule-time-slot{
-            padding: 20px 0;
-            background-color: #f9f9f9;
+        .card{
             
-            &.break{
-                color: $grey;
-                background-color: $black;
+            h6{
+                font-size: 0.85rem;
             }
             
-            h2{
-                margin-top: 0;
-            }
-        }
-        
-        .workshop-row{
-            padding: 20px 0;
-            
-            h2{
-                margin-top: 0;
+            p{
+                font-size: 0.85rem;
             }
         }
     }
+    
+    .whats-on-block{
+        padding: 10px;
+        background-color: $black;
+        color: $white;
+    }
+}
+
+.venue-img{
+    background: url('../images/watershed.png') no-repeat center center;
+    background-size: cover;
+    min-height: 500px;
+    border-top: 5px solid $black;
+    border-bottom: 5px solid $black;
+    margin: 20px 0 0;
+}
+
+#map{
+    height: 300px;
+}
+
+.partner-block{
+    background-color: $black;
+    color: $white;
+    
+    &.bluefly{
+        .partner-block-image-wrapper{
+            background-color: #426eb7;
+        }
+    }
+    
+    &-image-wrapper{
+        box-sizing: border-box;
+        border: 5px solid #222;
+        padding: 10px;
+        height: 255px;
+        display: flex;
+        align-items: center;
+        
+        a{
+            display: block;
+            width: 100%;
+        }
+    }
+    
+    footer{
+        background-color: #222;
+        color: #fff;
+        box-sizing: border-box;
+        padding: 5px;
+        
+        a{
+            color: $wdc;
+        }
+    }
+}
+
+.speaker-follow{
+    margin-top: 20px;
+}
+
+.speaker-links{
+    list-style: none;
+    padding: 0;
 }

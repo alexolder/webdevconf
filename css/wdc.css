@@ -1,8 +1,11 @@
 .wf-active body {
   font-family: "open-sans",sans-serif; }
 
-.wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6, .wf-active .btn {
+.wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6 {
   font-family: "brandon-grotesque", sans-serif; }
+
+.wf-active strong {
+  font-weight: 700; }
 
 html {
   width: 100%;
@@ -10,125 +13,165 @@ html {
 
 .wdc {
   min-height: 100%;
-  padding-bottom: 86px;
+  padding-bottom: 236px;
   position: relative;
   color: #222; }
-  .wdc h2 {
-    margin-bottom: 20px; }
-  .wdc .navbar-wrapper {
-    padding-top: 15px;
-    background: url("../images/wdcbg.jpg") no-repeat center center;
-    background-size: cover; }
-    @media screen and (min-width: 1024px) {
-      .wdc .navbar-wrapper {
-        min-height: 400px; } }
-    .wdc .navbar-wrapper .navbar {
-      border-radius: 0;
-      padding: 0.5rem 1rem 0.5rem 0.5rem; }
-    .wdc .navbar-wrapper .navbar-brand {
-      height: 50px;
-      width: 50px;
-      padding: 0; }
-    .wdc .navbar-wrapper #wdcmainnav {
-      clear: both; }
-      @media screen and (min-width: 40em) {
-        .wdc .navbar-wrapper #wdcmainnav {
-          clear: none; } }
-    .wdc .navbar-wrapper .nav-item {
-      float: none;
-      margin-left: 0; }
-      @media screen and (min-width: 40em) {
-        .wdc .navbar-wrapper .nav-item {
-          float: left;
-          margin-left: 15px; } }
-      .wdc .navbar-wrapper .nav-item .nav-link {
-        padding: 0.5rem 0; }
-        @media screen and (min-width: 40em) {
-          .wdc .navbar-wrapper .nav-item .nav-link {
-            padding-top: 0.825rem;
-            padding-bottom: 0.825rem; } }
-  .wdc .home-intro {
-    background: rgba(255, 255, 255, 0.75);
-    text-align: center;
-    height: 225px;
-    margin: 20px 0;
-    box-sizing: border-box;
-    padding: 20px; }
-    @media screen and (min-width: 62em) {
-      .wdc .home-intro {
-        height: 300px; } }
-    .wdc .home-intro h1 {
-      font-size: 3.6rem; }
-      @media screen and (min-width: 62em) {
-        .wdc .home-intro h1 {
-          font-size: 7rem; } }
-    .wdc .home-intro h2 {
-      font-size: 2.125rem; }
-      @media screen and (min-width: 62em) {
-        .wdc .home-intro h2 {
-          font-size: 4.2rem; } }
-  .wdc .home-section-wrapper {
-    padding: 20px 0; }
-  .wdc .home-section-block {
-    box-sizing: border-box;
-    padding: 10px;
-    background-color: #222;
-    color: #fff; }
-    .wdc .home-section-block h3 {
-      text-transform: uppercase; }
-  .wdc .map {
-    margin: 20px 0; }
-    .wdc .map__location {
-      height: 500px; }
-  .wdc .partner-block {
-    margin-bottom: 20px; }
-    .wdc .partner-block .partner-block-image-wrapper {
-      box-sizing: border-box;
-      border: 5px solid #222;
-      padding: 10px;
-      height: 255px;
-      display: flex;
-      align-items: center; }
-      .wdc .partner-block .partner-block-image-wrapper a {
-        display: block;
-        width: 100%; }
-      .wdc .partner-block .partner-block-image-wrapper img {
-        display: block; }
-    .wdc .partner-block.bluefly .partner-block-image-wrapper {
-      background-color: #426eb6; }
-    .wdc .partner-block footer {
-      background-color: #222;
-      color: #fff;
-      box-sizing: border-box;
-      padding: 5px; }
-      .wdc .partner-block footer a {
+  .wdc .navbar {
+    background-color: transparent; }
+    .wdc .navbar a {
+      color: #fff; }
+      .wdc .navbar a:hover, .wdc .navbar a:active, .wdc .navbar a:focus {
         color: #fff200; }
-  .wdc .site-footer {
-    border-top: 1px solid #ccc;
-    padding: 20px 0;
+      .wdc .navbar a.btn-wdc {
+        color: #222; }
+    .wdc .navbar .active a {
+      color: #fff200; }
+      .wdc .navbar .active a:hover, .wdc .navbar .active a:active, .wdc .navbar .active a:focus {
+        color: #fff; }
+    .wdc .navbar .navbar-brand img {
+      width: 50px;
+      height: 50px; }
+    .wdc .navbar-nav {
+      margin-top: 10px; }
+
+.front-page-header {
+  background: #222 url("../images/wdcbg.jpg") no-repeat center center;
+  background-size: cover;
+  border-bottom: 10px solid #222;
+  position: relative; }
+  .front-page-header:before {
+    content: '';
+    display: block;
     position: absolute;
-    bottom: 0;
+    top: 0;
+    width: 100%;
     left: 0;
-    width: 100%; }
-  .wdc .btn {
-    text-transform: uppercase;
-    border-radius: 0; }
-    .wdc .btn-wdc {
-      background-color: #fff200;
-      color: #222; }
-  .wdc.page h1 {
-    margin-bottom: 30px; }
-  .wdc.page h2 {
-    margin: 20px 0; }
-  .wdc.page .schedule-time-slot {
-    padding: 20px 0;
-    background-color: #f9f9f9; }
-    .wdc.page .schedule-time-slot.break {
-      color: #ccc;
-      background-color: #222; }
-    .wdc.page .schedule-time-slot h2 {
-      margin-top: 0; }
-  .wdc.page .workshop-row {
-    padding: 20px 0; }
-    .wdc.page .workshop-row h2 {
-      margin-top: 0; }
+    bottom: 0;
+    height: 100%;
+    background-color: rgba(34, 34, 34, 0.5); }
+
+.site-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #222;
+  color: #ccc;
+  padding: 20px 0 10px; }
+  .site-footer a {
+    color: #fff200;
+    font-weight: 700; }
+  .site-footer ul {
+    list-style: none;
+    padding: 0; }
+
+.intro-block {
+  background-color: rgba(34, 34, 34, 0.75);
+  margin: 30px 0;
+  color: #fff;
+  padding: 20px; }
+  .intro-block h1 {
+    font-size: 3.6rem; }
+    @media screen and (min-width: 62em) {
+      .intro-block h1 {
+        font-size: 5.5rem; } }
+    @media screen and (min-width: 75em) {
+      .intro-block h1 {
+        font-size: 7rem; } }
+  .intro-block h2 {
+    font-size: 2.125rem; }
+    @media screen and (min-width: 62em) {
+      .intro-block h2 {
+        font-size: 3.35rem; } }
+    @media screen and (min-width: 75em) {
+      .intro-block h2 {
+        font-size: 4.2rem; } }
+  .intro-block .btn-wdc {
+    display: inline-block;
+    margin-right: 5px; }
+  .intro-block a[href="http://getinvited.to"] {
+    display: inline-block;
+    margin-left: 5px; }
+    .intro-block a[href="http://getinvited.to"] img {
+      width: auto;
+      height: 40px;
+      display: inline-block; }
+
+.btn-wdc {
+  background: #fff200;
+  color: #222;
+  transition: all 0.5s ease-in-out;
+  font-weight: bold; }
+  .btn-wdc:hover, .btn-wdc:active, .btn-wdc:focus {
+    background: #e6da00;
+    color: #222; }
+
+.btn-wdc-alt {
+  background: #222;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out; }
+  .btn-wdc-alt:hover, .btn-wdc-alt:active, .btn-wdc-alt:focus {
+    color: #fff200; }
+
+.alert-wdc {
+  background-color: #fff200;
+  color: #222;
+  margin-bottom: 0; }
+
+.alert p {
+  margin-bottom: 0;
+  padding-top: 8px; }
+
+.home-page-blocks .block {
+  padding: 10px 0; }
+  .home-page-blocks .block .card h6 {
+    font-size: 0.85rem; }
+  .home-page-blocks .block .card p {
+    font-size: 0.85rem; }
+
+.home-page-blocks .whats-on-block {
+  padding: 10px;
+  background-color: #222;
+  color: #fff; }
+
+.venue-img {
+  background: url("../images/watershed.png") no-repeat center center;
+  background-size: cover;
+  min-height: 500px;
+  border-top: 5px solid #222;
+  border-bottom: 5px solid #222;
+  margin: 20px 0 0; }
+
+#map {
+  height: 300px; }
+
+.partner-block {
+  background-color: #222;
+  color: #fff; }
+  .partner-block.bluefly .partner-block-image-wrapper {
+    background-color: #426eb7; }
+  .partner-block-image-wrapper {
+    box-sizing: border-box;
+    border: 5px solid #222;
+    padding: 10px;
+    height: 255px;
+    display: flex;
+    align-items: center; }
+    .partner-block-image-wrapper a {
+      display: block;
+      width: 100%; }
+  .partner-block footer {
+    background-color: #222;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 5px; }
+    .partner-block footer a {
+      color: #fff200; }
+
+.speaker-follow {
+  margin-top: 20px; }
+
+.speaker-links {
+  list-style: none;
+  padding: 0; }
