@@ -14,11 +14,11 @@ $xl: 75em;
     body{
         font-family: "open-sans",sans-serif;
     }
-    
+
     h1, h2, h3, h4, h5, h6{
         font-family: "brandon-grotesque", sans-serif;
     }
-    
+
     strong{
         font-weight: 700;
     }
@@ -34,42 +34,72 @@ html{
     padding-bottom: 236px;
     position: relative;
     color: $black;
-    
+
     .navbar{
         background-color: transparent;
-        
+
+        .navbar-toggler{
+          color: $wdc;
+          float: right;
+          font-size: 1.5rem;
+          border: 1px solid $wdc;
+          margin-top: 10px;
+
+          &:hover, &:active, &:focus{
+            color: $white;
+            border-color: $white;
+          }
+        }
+
         a{
             color: $white;
-            
+
             &:hover, &:active, &:focus{
                 color: $wdc;
             }
-            
+
             &.btn-wdc{
                 color: $black;
             }
         }
-        
+
         .active{
             a{
                 color: $wdc;
-                
+
                 &:hover, &:active, &:focus{
                     color: $white;
                 }
-                
+
             }
         }
-        
+
         .navbar-brand{
             img{
                 width: 50px;
                 height: 50px;
             }
         }
-        
+
         &-nav{
             margin-top: 10px;
+            clear: both;
+
+            @media screen and (min-width: 48em){
+              clear: none;
+            }
+
+            .nav-item{
+              display: block;
+              float: none;
+              margin-left: 0;
+
+              @media screen and (min-width: 48em){
+                float: left;
+                margin-left: 1rem;
+              }
+            }
+
         }
     }
 }
@@ -79,7 +109,7 @@ html{
     background-size: cover;
     border-bottom: 10px solid $black;
     position: relative;
-    
+
     &:before{
         content: '';
         display: block;
@@ -101,13 +131,13 @@ html{
     background-color: $black;
     color: $grey;
     padding: 20px 0 10px;
-    
+
     a{
         color: $wdc;
         font-weight: 700;
-        
+
     }
-    
+
     ul{
         list-style: none;
         padding: 0;
@@ -119,40 +149,40 @@ html{
     margin: 30px 0;
     color: $white;
     padding: 20px;
-    
+
     h1{
         font-size: 3.6rem;
-        
+
         @media screen and (min-width: $lg) {
           font-size: 5.5rem;
         }
-        
+
         @media screen and (min-width: $xl){
             font-size: 7rem;
         }
     }
-    
+
     h2{
         font-size: 2.125rem;
-        
+
         @media screen and (min-width: $lg) {
             font-size: 3.35rem;
         }
-        
+
         @media screen and (min-width: $xl){
             font-size: 4.2rem
         }
     }
-    
+
     .btn-wdc{
         display: inline-block;
         margin-right: 5px;
     }
-    
+
     a[href="http://getinvited.to"]{
         display: inline-block;
         margin-left: 5px;
-        
+
         img{
             width: auto;
             height: 40px;
@@ -162,25 +192,25 @@ html{
 }
 
 .btn{
-    
+
     &-wdc{
         background: $wdc;
         color: $black;
         transition: all 0.5s ease-in-out;
         font-weight: bold;
-        
+
         &:hover, &:active, &:focus{
             background: darken($wdc, 5%);
             color: $black;
         }
     }
-    
+
     &-wdc-alt{
         background: $black;
         color: $white;
         font-weight: bold;
         transition: all 0.5s ease-in-out;
-        
+
         &:hover, &:active, &:focus{
             color: $wdc;
         }
@@ -193,7 +223,7 @@ html{
         color: $black;
         margin-bottom: 0;
     }
-    
+
     p{
         margin-bottom: 0;
         padding-top: 8px;
@@ -201,22 +231,22 @@ html{
 }
 
 .home-page-blocks{
-    
+
     .block{
         padding: 10px 0;
-        
+
         .card{
-            
+
             h6{
                 font-size: 0.85rem;
             }
-            
+
             p{
                 font-size: 0.85rem;
             }
         }
     }
-    
+
     .whats-on-block{
         padding: 10px;
         background-color: $black;
@@ -240,13 +270,13 @@ html{
 .partner-block{
     background-color: $black;
     color: $white;
-    
+
     &.bluefly{
         .partner-block-image-wrapper{
             background-color: #426eb7;
         }
     }
-    
+
     &-image-wrapper{
         box-sizing: border-box;
         border: 5px solid #222;
@@ -254,19 +284,19 @@ html{
         height: 255px;
         display: flex;
         align-items: center;
-        
+
         a{
             display: block;
             width: 100%;
         }
     }
-    
+
     footer{
         background-color: #222;
         color: #fff;
         box-sizing: border-box;
         padding: 5px;
-        
+
         a{
             color: $wdc;
         }
